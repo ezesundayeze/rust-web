@@ -1,0 +1,17 @@
+[package]
+name = "blog"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rocket = { version = "0.5.0-rc.2", features=["json"]}
+diesel = { version = "2.0.0", features = ["postgres", "r2d2"] }
+dotenvy = "0.15"
+serde = "1.0.152"
+rocket_contrib = "0.4.4"
+
+[dependencies.rocket_dyn_templates]
+
+features = ["handlebars"]
